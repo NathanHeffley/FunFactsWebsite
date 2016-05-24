@@ -15,7 +15,7 @@ var funfacts = [
 ];
 
 /* GET funfact listing. */
-router.get('/', function(req, res, next) {
+router.get('/funfact', function(req, res, next) {
   var factIndex = Math.floor(Math.random() * funfacts.length);
   res.send(funfacts[factIndex]);
 });
