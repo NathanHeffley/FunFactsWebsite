@@ -14,10 +14,14 @@ var funfacts = [
   'Some penguins can leap 2-3 meters out of the water.'
 ];
 
-/* GET funfact listing. */
-router.get('/funfact', function(req, res, next) {
+// 1.0.X Routes
+router.get('/v1.0/fact/random', function(req, res, next) {
   var factIndex = Math.floor(Math.random() * funfacts.length);
-  res.send(funfacts[factIndex]);
+  var factText = funfacts[factIndex];
+  var fact = {
+    text: factText
+  };
+  res.json(fact);
 });
 
 module.exports = router;
