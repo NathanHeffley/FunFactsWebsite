@@ -2,13 +2,13 @@
 
 Fun Facts (Website) is a Node.js + Express server. The main feature is the API, which serves up short facts. Along with the API is a simple front-end page which utilizes the API.
 
-## Current API Version: 0.0.1
+## Current API Version: 0.1.0
 
 Learn more about the API features in API.md
 
 ### Features
 
-- Random fact served as a string at /api/0-0-1/funfact
+- Random fact served as a string at /api/0-1-0/fact/random
 
 ### Planned Features
 
