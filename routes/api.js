@@ -17,9 +17,8 @@ var funfacts = [
 // 1.0.X Routes
 router.get('/v1.0/fact/random', function(req, res, next) {
   var factIndex = Math.floor(Math.random() * funfacts.length);
-  var factText = funfacts[factIndex];
   var fact = {
-    text: factText
+    text: funfacts[factIndex]
   };
   res.json(fact);
 });
