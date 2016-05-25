@@ -10,8 +10,6 @@ Learn more about the API features in API.md
 
 - Random fact served as JSON at /api/v1.0/fact/random
 
-- JSON result only includes "text" value
-
 ### Planned Features
 
 - ID each fact and allow specific facts to be accessed through the API
