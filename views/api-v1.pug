@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  #container.large
+    h1 API v1
+      a(href="/api/").back Back
+    p A Fact object is returned as a JSON object with two values: id and text.
+    p <span>id</span> - A unique integer stored with every Fact.
+    p <span>text</span> - A string storing the actual Fact data.
+    h2 Endpoints
+    p <span>GET /fact/random</span> - Retrieve a random Fact object.
+    p <span>GET /fact/{id}</span> - Retrieve the Fact object with the same id. If a Fact with the specified id isn't found, the server responds with a "missing" JSON Fact object with an id of -1 and a text value of "I wasn't able to find a fun fact with that id."
+    h2 Minor Update Log
+    p <span>v1.1.0</span> - Add another endpoint, /fact/{id}
+    p <span>v1.0.0</span> - Implement the first endpoint, /fact/random

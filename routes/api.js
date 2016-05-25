@@ -19,6 +19,14 @@ var missing_fact = {
   text: 'I wasn\'t able to find a fun fact with that id.'
 };
 
+// API information routes
+router.get('/', function(req, res, next) {
+  res.render('api', { title: 'Fun Facts API' });
+});
+router.get('/v1/', function(req, res, next) {
+  res.render('api-v1', { title: 'Fun Facts API v1' });
+});
+
 // 1.X Routes
 router.get('/v1/fact/random', function(req, res, next) {
   var factIndex = Math.floor(Math.random() * funfacts.length);

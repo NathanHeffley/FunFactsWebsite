@@ -12,15 +12,34 @@ body {
   background-color: #2387a8;
 }
 
-#container {
+#container.small {
   height: 100%;
   width: 30rem;
   margin: 0 auto;
   position: relative;
 }
 
-p, button {
-  vertical-align: top;
+#container.large {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+#container.large p {
+  margin: 1rem 0;
+}
+
+#container.large h2 {
+  margin-top: 3rem;
+}
+
+.back {
+  font-size: 0.75em;
+  float: right;
+  padding: 1rem;
+}
+
+p span {
+  font-weight: bold;
 }
 
 #did-you-know {
