@@ -4,6 +4,6 @@ block content
   #container.small
     p#did-you-know Did you know? <span id="fact-id">##{fact.id}</span>
     p#fun-fact= fact.text
-    button#next-fact.
-      SHOW ANOTHER FUN FACT!
-    script(src='/scripts/fetchTask.js')
+    a(href="/")
+      button#next-fact.
+        SHOW ANOTHER FUN FACT!

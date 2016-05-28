@@ -42,7 +42,7 @@ p span {
   font-weight: bold;
 }
 
-.fact_id {
+#fact-id {
   float: right;
   font-weight: normal;
 }
