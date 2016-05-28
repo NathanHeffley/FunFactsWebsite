@@ -42,16 +42,22 @@ p span {
   font-weight: bold;
 }
 
+.fact_id {
+  float: right;
+  font-weight: normal;
+}
+
 #did-you-know {
   position: absolute;
-  left: 1rem;
+  left: 0;
   top: 1rem;
+  width: 100%;
   color: rgba(255, 255, 255, 0.5);
 }
 
 #fun-fact {
   position: absolute;
-  left: 1rem;
+  left: 0;
   top: 45%;
   color: #FFF;
 }
@@ -59,9 +65,9 @@ p span {
 #next-fact {
   font-size: 1.5rem;
   padding: 1rem;
-  width: 28rem;
+  width: 100%;
   position: absolute;
-  left: 1rem;
+  left: 0;
   bottom: 1rem;
   color: #2387A8;
 }

@@ -2,8 +2,8 @@ extends layout
 
 block content
   #container.small
-    p#did-you-know Did you know?
-    p#fun-fact= funfact
+    p#did-you-know Did you know? <span class="fact_id">##{fact.id}</span>
+    p#fun-fact= fact.text
     a(href="/")
       button#next-fact.
         SHOW ANOTHER FUN FACT!
