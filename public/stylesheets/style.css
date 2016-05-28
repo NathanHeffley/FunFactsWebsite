@@ -3,71 +3,85 @@
   padding: 0;
 }
 
-html, body {
-  height: 100vh;
-}
-
 body {
-  font: 2rem "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #2387a8;
 }
 
-#container.small {
-  height: 100%;
-  width: 30rem;
-  margin: 0 auto;
-  position: relative;
-}
-
-#container.large {
-  width: 60rem;
+#container {
+  max-width: 640px;
+  padding: 1em;
   margin: 0 auto;
 }
 
-#container.large p {
-  margin: 1rem 0;
-}
-
-#container.large h2 {
-  margin-top: 3rem;
-}
-
-.back {
-  font-size: 0.75em;
-  float: right;
-  padding: 1rem;
-}
-
-p span {
-  font-weight: bold;
-}
-
-#fact-id {
-  float: right;
-  font-weight: normal;
-}
-
-#did-you-know {
-  position: absolute;
-  left: 0;
-  top: 1rem;
-  width: 100%;
+/* Basic styling */
+#did-you-know, #fact-id {
   color: rgba(255, 255, 255, 0.5);
 }
 
 #fun-fact {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  color: #FFF;
+  color: #fff;
 }
 
 #next-fact {
-  font-size: 1.5rem;
-  padding: 1rem;
+  border: none;
+  background-color: #fff;
+  color: #2387a8;
+}
+
+/* Specifc styling */
+
+#did-you-know, #fact-id {
+  font-size: 1.75rem;
+  display: inline;
+}
+
+#top-bar:after { /* Clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#did-you-know {
+  float: left;
+  font-weight: normal;
+}
+
+#fact-id {
+  float: right;
+}
+
+#fun-fact {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+#next-fact {
   width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 1rem;
-  color: #2387A8;
+  font-size: 1.25em;
+  padding: 0.5em;
+}
+
+/* API pages */
+.api h1 {
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+}
+
+.api h1 .back {
+  float: right;
+}
+
+.api h2 {
+  font-size: 2em;
+  margin: 2rem 0 1rem 0;
+}
+
+.api p {
+  font-size: 1.5em;
+  margin-bottom: 0.5rem;
+}
+
+.api p span {
+  font-weight: bold;
 }

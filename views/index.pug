@@ -1,8 +1,10 @@
 extends layout
 
 block content
-  #container.small
-    p#did-you-know Did you know? <span id="fact-id">##{fact.id}</span>
+  #container
+    header#top-bar
+      h2#did-you-know Did you know?
+      span#fact-id ##{fact.id}
     p#fun-fact= fact.text
     a(href="/", onclick="return false;")
       button#next-fact SHOW ANOTHER FUN FACT!
