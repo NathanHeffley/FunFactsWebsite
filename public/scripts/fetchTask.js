@@ -1,5 +1,5 @@
 (function() {
-  var randomFactUrl = '/api/v1/fact/random';
+  var randomFactUrl = 'http://localhost:3050/v1/fact/random';
   var httpRequest;
 
   document.getElementById('next-fact').onclick = function() { fetchRandomTask(randomFactUrl); };
